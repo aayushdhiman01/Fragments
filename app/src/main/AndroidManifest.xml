@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Fragments">
         <activity
+            android:name=".ActivityInterface"
+            android:exported="false" />
+        <activity
+            android:name=".Fragment1"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
