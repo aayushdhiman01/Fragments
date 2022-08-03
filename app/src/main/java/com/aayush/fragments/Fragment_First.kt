@@ -29,11 +29,11 @@ class Fragment_First : Fragment(),ActivityInterface{
     lateinit var initView:View
     lateinit var tvHello: TextView
     lateinit var ll: LinearLayout
-    lateinit var fragmentActivity: FragmentActivity
+    lateinit var fragmentActivity: com.aayush.fragments.FragmentActivity
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
-        fragmentActivity = activity as FragmentActivity
+        fragmentActivity = activity as com.aayush.fragments.FragmentActivity
         fragmentActivity.activityInterface=this
     }
 

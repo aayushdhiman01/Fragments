@@ -7,7 +7,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import com.google.android.material.snackbar.Snackbar
 
-class MainActivity : AppCompatActivity() {
+class FragmentActivity : AppCompatActivity() {
     lateinit var activityInterface: ActivityInterface
 //    lateinit var btn:Button
     lateinit var btnAlertDialog: Button
@@ -17,15 +17,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 //        btn=findViewById(R.id.btn)
         btnAlertDialog=findViewById(R.id.btnAlertDialog)
-
-//        btn.setOnClickListener {
-//            Snackbar.make(btn,
-//            "Snack Bar",Snackbar.LENGTH_SHORT)
-//                .setAction(resources.getString(R.string.ok)){
-//                    activityInterface.ActivityInterface(1,i)
-//                    Toast.makeText(this,"Toast from snackbar",Toast.LENGTH_SHORT).show()
-//
-//                }
+        
         btnAlertDialog.setOnClickListener {
             AlertDialog.Builder(this).apply {
                 setCancelable(false)
