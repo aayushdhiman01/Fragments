@@ -9,7 +9,6 @@ import com.google.android.material.snackbar.Snackbar
 
 class FragmentActivity : AppCompatActivity() {
     lateinit var activityInterface: ActivityInterface
-//    lateinit var btn:Button
     lateinit var btnAlertDialog: Button
     var i=1
     override fun onCreate(savedInstanceState: Bundle?) {
