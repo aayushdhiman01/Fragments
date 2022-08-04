@@ -15,7 +15,7 @@ class FragmentActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-//        btn=findViewById(R.id.btn)
+
         btnAlertDialog=findViewById(R.id.btnAlertDialog)
 
         btnAlertDialog.setOnClickListener {
