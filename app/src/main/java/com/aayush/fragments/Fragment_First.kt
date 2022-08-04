@@ -74,6 +74,15 @@ class Fragment_First : Fragment(),ActivityInterface{
             }
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        tvHello =initView.findViewById(R.id.tvHello)
+        ll=initView.findViewById(R.id.ll)
+        tvHello.setOnClickListener {
+            fragmentActivity.showToast()
+        }
+    }
+
     override fun ActivityInterface(color:Int,i:Int){
         tvHello.setText("Changed color $i times")
         when (color){

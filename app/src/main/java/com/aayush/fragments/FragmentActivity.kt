@@ -17,7 +17,7 @@ class FragmentActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 //        btn=findViewById(R.id.btn)
         btnAlertDialog=findViewById(R.id.btnAlertDialog)
-        
+
         btnAlertDialog.setOnClickListener {
             AlertDialog.Builder(this).apply {
                 setCancelable(false)
